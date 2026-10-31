@@ -1,0 +1,21 @@
+{
+  "name": "trustcti-blockchain",
+  "version": "1.0.0",
+  "description": "Smart contracts and local node for TrustCTI blockchain integrity registry",
+  "main": "index.js",
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "test": "hardhat test"
+  },
+  "keywords": ["cyber-threat-intelligence", "blockchain", "solidity", "hardhat", "integrity"],
+  "author": "TrustCTI Core Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}
+

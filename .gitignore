@@ -1,0 +1,112 @@
+# ==============================================================================
+# TrustCTI - Comprehensive .gitignore for Secure Distribution & Version Control
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Sensitive Environment & Credentials (NEVER SHARE)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.local
+
+# Cryptographic Keys, Certificates, and Wallets
+*.pem
+*.key
+*.keystore
+*.p12
+*.pfx
+*.cert
+*.crt
+id_rsa*
+id_ed25519*
+secrets/
+secrets.*
+
+# ------------------------------------------------------------------------------
+# 2. Local Databases & Storage Engines (Exclude Local Data)
+# ------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+trustcti.db
+test_*.db
+clean_*.db
+pgdata/
+pgdata*/
+
+# ------------------------------------------------------------------------------
+# 3. Node.js & Hardhat Temporary Build Caches
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Hardhat compilation caches (Exclude build-info caches, keep contract ABI)
+blockchain/cache/
+blockchain/artifacts/build-info/
+blockchain/typechain-types/
+coverage/
+coverage.json
+
+# ------------------------------------------------------------------------------
+# 4. Python Bytecode, Caches & Test Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+**/.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+dist/
+build/
+*.egg-info/
+
+# ------------------------------------------------------------------------------
+# 5. Operating System & Editor Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ------------------------------------------------------------------------------
+# 6. Explicitly Preserved Application Assets & Artifacts
+# ------------------------------------------------------------------------------
+!.env.example
+!artifacts/
+!artifacts/*
+!data/
+!data/cti_binary_dataset.csv
+!blockchain/contracts/CTIRegistry.sol
+!blockchain/artifacts/contracts/CTIRegistry.sol/CTIRegistry.json
+!blockchain/deployments/deployment.json
+!backend/config/contract_address.json

@@ -1,0 +1,262 @@
+[
+  {
+    "feature": "url_len",
+    "importance": 1.9343670243016402
+  },
+  {
+    "feature": "url_len_v2",
+    "importance": 1.0338729926215748
+  },
+  {
+    "feature": "phish_long_path",
+    "importance": 0.7138639356043521
+  },
+  {
+    "feature": "path_len",
+    "importance": 0.4776315337295255
+  },
+  {
+    "feature": "letter_count_v2",
+    "importance": 0.4483169519701127
+  },
+  {
+    "feature": "letters",
+    "importance": 0.33560313882563053
+  },
+  {
+    "feature": ".",
+    "importance": 0.3068860051091913
+  },
+  {
+    "feature": "phish_adv_hyphen_count",
+    "importance": 0.2751429689451632
+  },
+  {
+    "feature": "url_entropy",
+    "importance": 0.19962997162743143
+  },
+  {
+    "feature": "domain_len",
+    "importance": 0.18394507463341794
+  },
+  {
+    "feature": "-",
+    "importance": 0.17804482292748516
+  },
+  {
+    "feature": "phish_adv_number_count",
+    "importance": 0.15485133368385035
+  },
+  {
+    "feature": "path_underscore_count",
+    "importance": 0.1437158753252752
+  },
+  {
+    "feature": "?",
+    "importance": 0.14364849588865658
+  },
+  {
+    "feature": "digit_ratio",
+    "importance": 0.1330724883090677
+  },
+  {
+    "feature": "path_depth",
+    "importance": 0.13276696544855865
+  },
+  {
+    "feature": "digit_count_v2",
+    "importance": 0.13166524293519385
+  },
+  {
+    "feature": "is_https",
+    "importance": 0.11221186001879448
+  },
+  {
+    "feature": "+",
+    "importance": 0.09503506286326922
+  },
+  {
+    "feature": "%",
+    "importance": 0.08973084536451499
+  },
+  {
+    "feature": "special_ratio",
+    "importance": 0.08781887974967015
+  },
+  {
+    "feature": "query_param_count",
+    "importance": 0.08725277092294186
+  },
+  {
+    "feature": "query_len",
+    "importance": 0.0867074027549168
+  },
+  {
+    "feature": "suspicious_extension",
+    "importance": 0.08450996430519803
+  },
+  {
+    "feature": "token_count",
+    "importance": 0.07330105480034836
+  },
+  {
+    "feature": "phish_multiple_subdomains",
+    "importance": 0.06980312011881261
+  },
+  {
+    "feature": "host_entropy",
+    "importance": 0.068369506468205
+  },
+  {
+    "feature": "letter_ratio",
+    "importance": 0.0562372934540332
+  },
+  {
+    "feature": "digits",
+    "importance": 0.0540300030724812
+  },
+  {
+    "feature": "max_token_len",
+    "importance": 0.04991822798641087
+  },
+  {
+    "feature": "phish_brand_hijack",
+    "importance": 0.04907001365359174
+  },
+  {
+    "feature": "special_count_v2",
+    "importance": 0.04772428812961032
+  },
+  {
+    "feature": "subdomain_count",
+    "importance": 0.03555910932342176
+  },
+  {
+    "feature": "=",
+    "importance": 0.03198431847996661
+  },
+  {
+    "feature": "phish_adv_brand_in_path",
+    "importance": 0.02650850520386243
+  },
+  {
+    "feature": "avg_token_len",
+    "importance": 0.02520057485327912
+  },
+  {
+    "feature": "phish_urgency_words",
+    "importance": 0.021998740470927997
+  },
+  {
+    "feature": "Shortining_Service",
+    "importance": 0.018339745383937837
+  },
+  {
+    "feature": "https",
+    "importance": 0.016459900979932263
+  },
+  {
+    "feature": "phish_adv_many_params",
+    "importance": 0.015220389305425335
+  },
+  {
+    "feature": "phish_adv_encoded_chars",
+    "importance": 0.010426129635878566
+  },
+  {
+    "feature": ",",
+    "importance": 0.00802317786610802
+  },
+  {
+    "feature": "phish_adv_path_keywords",
+    "importance": 0.007340795757554011
+  },
+  {
+    "feature": "phish_brand_mentions",
+    "importance": 0.007320305193783713
+  },
+  {
+    "feature": "phish_adv_long_domain",
+    "importance": 0.006415760243684053
+  },
+  {
+    "feature": "phish_adv_brand_in_subdomain",
+    "importance": 0.003071496303398168
+  },
+  {
+    "feature": "phish_security_words",
+    "importance": 0.002826997649511317
+  },
+  {
+    "feature": "path_has_hacked_terms",
+    "importance": 0.002389547101947243
+  },
+  {
+    "feature": "has_port",
+    "importance": 0.0011634960511699318
+  },
+  {
+    "feature": "having_ip_address",
+    "importance": 0.0009307716948632138
+  },
+  {
+    "feature": "phish_adv_has_redirect",
+    "importance": 0.0005708086123084649
+  },
+  {
+    "feature": "is_ip_host",
+    "importance": 0.0002969919832050795
+  },
+  {
+    "feature": "@",
+    "importance": 0.00023345485008321684
+  },
+  {
+    "feature": "phish_adv_many_subdomains",
+    "importance": 3.612543493974954e-05
+  },
+  {
+    "feature": "phish_many_params",
+    "importance": 2.849332599900665e-05
+  },
+  {
+    "feature": "has_punycode",
+    "importance": 0.0
+  },
+  {
+    "feature": "is_shortener",
+    "importance": 0.0
+  },
+  {
+    "feature": "#",
+    "importance": 0.0
+  },
+  {
+    "feature": "$",
+    "importance": 0.0
+  },
+  {
+    "feature": "!",
+    "importance": 0.0
+  },
+  {
+    "feature": "*",
+    "importance": 0.0
+  },
+  {
+    "feature": "phish_suspicious_tld",
+    "importance": 0.0
+  },
+  {
+    "feature": "phish_adv_exact_brand_match",
+    "importance": 0.0
+  },
+  {
+    "feature": "phish_adv_suspicious_tld",
+    "importance": 0.0
+  },
+  {
+    "feature": "is_gov_edu",
+    "importance": 0.0
+  }
+]

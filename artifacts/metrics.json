@@ -1,0 +1,33 @@
+{
+  "model_type": "XGBoost Classifier",
+  "training_samples": 506275,
+  "test_samples": 126569,
+  "features_count": 65,
+  "scale_pos_weight": 2.004920406927743,
+  "evaluation": {
+    "accuracy": 0.9232434482377201,
+    "precision": 0.8884679932869816,
+    "recall": 0.8797986752451271,
+    "f1_score": 0.8841120826424592,
+    "roc_auc": 0.9734979844197214,
+    "confusion_matrix": [
+      [
+        79796,
+        4652
+      ],
+      [
+        5063,
+        37058
+      ]
+    ],
+    "multi_class_accuracy": 0.9029383182295823
+  },
+  "target_mapping": {
+    "benign": 0,
+    "defacement": 1,
+    "phishing": 2,
+    "malware": 3
+  },
+  "training_duration_seconds": 133.31,
+  "trained_at": "2026-10-30 18:18:08 UTC"
+}

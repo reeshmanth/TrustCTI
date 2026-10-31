@@ -1,0 +1,38 @@
+{
+  "total_rows": 632844,
+  "total_columns": 89,
+  "class_label_distribution": {
+    "phishing": 91741,
+    "benign": 422241,
+    "defacement": 95285,
+    "malware": 23577
+  },
+  "is_malicious_distribution": {
+    "1": 210603,
+    "0": 422241
+  },
+  "original_label_distribution": {
+    "2": 91741,
+    "0": 422241,
+    "1": 95285,
+    "3": 23577
+  },
+  "missing_values_summary": {},
+  "web_nonzero_counts": {
+    "web_http_status": 102992,
+    "web_is_live": 39910,
+    "web_ext_ratio": 55429,
+    "web_unique_domains": 55429,
+    "web_favicon": 46292,
+    "web_forms_count": 29701,
+    "web_hidden_inputs": 17702,
+    "web_csp": 14573,
+    "web_xframe": 25413,
+    "web_hsts": 25372,
+    "web_xcontent": 25645,
+    "web_security_score": 44365,
+    "web_ssl_valid": 10555,
+    "web_password_fields": 3208,
+    "web_has_login": 4432
+  }
+}

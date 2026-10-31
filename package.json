@@ -1,0 +1,17 @@
+{
+  "name": "trustcti",
+  "version": "1.0.0",
+  "description": "Explainable AI and Blockchain-Based Trustworthy Cyber Threat Intelligence Sharing Platform",
+  "scripts": {
+    "blockchain:node": "cd blockchain && npm run node",
+    "blockchain:compile": "cd blockchain && npm run compile",
+    "blockchain:deploy": "cd blockchain && npm run deploy",
+    "blockchain:test": "cd blockchain && npm run test",
+    "backend:dev": "uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000",
+    "test:all": "pytest tests/ -v && cd blockchain && npx hardhat test"
+  },
+  "keywords": ["cyber-threat-intelligence", "explainable-ai", "blockchain", "xgboost", "shap", "solidity"],
+  "author": "TrustCTI Team",
+  "license": "MIT"
+}
+

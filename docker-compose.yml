@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: trustcti-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: trustcti
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  blockchain:
+    build:
+      context: ./blockchain
+      dockerfile: Dockerfile
+    container_name: trustcti-blockchain-node
+    restart: always
+    ports:
+      - "8545:8545"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trustcti-api
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/trustcti
+      - BLOCKCHAIN_RPC_URL=http://blockchain:8545
+      - JWT_SECRET_KEY=trustcti-ultra-secure-cryptographic-jwt-secret-key-32charsmin!
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+
